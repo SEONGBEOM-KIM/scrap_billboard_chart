@@ -23,7 +23,7 @@ def get_music_info():
 
 
 def save_to_file(infos):
-    file = open("billboard.csv", mode="w", encoding="utf-8")
+    file = open("billboard.csv", mode="w", encoding="utf-8", newline="")
     writer = csv.writer(file)
     writer.writerow(["rank", "song", "artist"])
     for info in infos:
